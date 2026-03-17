@@ -2,19 +2,19 @@
 
 ![Project Dashboard](T20_WorldCup_2024_Dashboard.png)
 
-📌 Project Overview
+## 📌 Project Overview
 This project is an end-to-end Cricket Analytics solution built using Python and Power BI, focused on data-driven player analysis and team selection for the ICC Men’s T20 World Cup 2024.
 
 The objective of this project is to replace subjective player selection with a transparent, role-based, and performance-driven approach using match-level and ball-by-ball data.
 
-🎯 Business Problem
+## 🎯 Problem Statement
 Player selection in T20 cricket is often influenced by reputation and intuition rather than performance data.
 Key questions addressed:
 Who are the best players for each role (Openers, Anchors, All-Rounders, Bowlers)?
 How do players perform under different match stages (Group vs Super 8)?
 What is the optimal Final Playing XI based on combined team performance?
 
-📂 Dataset
+## 📂 Dataset
 Source: Public GitHub repository
 Format: CSV
 Coverage: 55 matches
@@ -24,26 +24,26 @@ Bowling data
 Match summary
 Player information
 
-🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 Python (Pandas, Jupyter Notebook)
 Power BI
 Power Query
 DAX
 
-🔄 Data Preparation & Transformation
+## 🔄 Data Preparation & Transformation
 Loaded raw CSV files into Pandas DataFrames
 Cleaned and standardized column names and values
 Removed unnecessary columns and string characters
 Created a mapping dictionary to generate a match_id column
 Exported clean, analysis-ready CSV files for Power BI
 
-⚡ Power Query
+## ⚡ Power Query
 Removed duplicates and trimmed text fields
 Set proper data types
 Created a conditional Match Stage column (Group / Super 8)
 Converted Overs → Balls for accurate bowling calculations
 
-🧱 Data Model
+## 🧱 Data Model
 The project follows a Star Schema design:
 
 Dimension Tables - 
@@ -58,7 +58,7 @@ runs, balls, fours, sixes, strike rate, batting position, boundary runs
 fact_bowling_summary
 wickets, runs conceded, economy, dot balls, balls bowled, boundary runs
 
-📐 Key Metrics (DAX) : 
+## 📐 Key Metrics (DAX) : 
 
 🏏 Batting Metrics -
 Total Runs
@@ -88,7 +88,7 @@ Interactive placeholders for better UX
 
 ➡️ Total DAX Measures Created: 20
 
-📊 Dashboard Structure
+## 📊 Dashboard Structure
 
 1️⃣ Player Analysis
 Five role-based pages with consistent layout and role-specific KPIs:
@@ -111,7 +111,7 @@ Selected player profiles
 Individual statistics
 Combined team performance metrics
 
-🧠 Role-Based Selection Criteria
+## 🧠 Role-Based Selection Criteria
 Role	Key Criteria
 Openers	High batting avg, high strike rate, strong boundary %
 Anchors	Stability, avg balls faced, consistent scoring
@@ -119,7 +119,7 @@ Batting All-Rounders	Batting + limited bowling contribution
 Bowling All-Rounders	Bowling impact with lower-order hitting
 Bowlers	Economy, strike rate, dot ball %
 
-🧩 Tooltips & UX Enhancements
+## 🧩 Tooltips & UX Enhancements
 Custom tooltip pages for:
 Batsmen
 Bowlers
@@ -127,14 +127,14 @@ All-Rounders
 Hover-based insights with player image, country, and key stats
 Improves insight density without cluttering visuals
 
-📈 Impact & Outcomes
+## 📈 Impact & Outcomes
 Enables 100% data-driven player comparison
 Reduces manual analysis time significantly
 Makes team selection transparent, repeatable, and role-focused
 Allows quick evaluation of multiple team combinations
 Demonstrates strong integration of Python + Power BI + DAX
 
-🚀 Future Enhancements
+## 🚀 Future Enhancements
 Predictive player performance modeling
 Opponent-specific analysis
 Venue-based performance trends
